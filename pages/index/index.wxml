@@ -1,0 +1,34 @@
+<!--index.wxml-->
+
+<!-- todo -->
+
+<view class="container">
+  <!-- <view class="search">
+    <input placeholder="输入猫咪名称" type="text" confirm-type="search" bindconfirm="searchCat">
+    </input>
+  </view> -->
+
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+
+  <block wx:for="{{catList}}">
+    <navigator url="/pages/cats/cats?id={{item.id}}" class="nav-cat">
+
+      <view class='cat-view'>
+      <image class = 'cat-nav' src='{{item.img}}' mode='aspectFill'></image>
+       <view class='cat-name'> {{item.name}}</view>
+      </view>
+    
+    </navigator>
+    <view class="divLine"></view>
+  </block>
+</view>
+

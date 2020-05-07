@@ -1,0 +1,20 @@
+<view class= "catname">{{catname}}</view>
+
+<!-- https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588430772322&di=f9fb3acfb81babf6bd3cfcc6a5712a58&imgtype=0&src=http%3A%2F%2Fimg5.goumin.com%2Fattachments%2Fbbs%2F201905%2F05%2F201905051109154456.jpg -->
+<view class="catimg">
+  <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588430772322&di=f9fb3acfb81babf6bd3cfcc6a5712a58&imgtype=0&src=http%3A%2F%2Fimg5.goumin.com%2Fattachments%2Fbbs%2F201905%2F05%2F201905051109154456.jpg" class="img">
+  </image>
+</view>
+
+<view class="catitems">
+  <view>{{id}}</view> 
+  <view>{{gender}}</view> 
+  <view>{{birthday}}出生</view> 
+  <view>绝育情况 : {{sterilization}}</view>
+  <view>领养情况 : {{adopt}}</view>
+  <view>性格 : {{temperament}}</view>
+  <view>外貌特征 : {{appearance}}</view>
+  <view>猫生概述 : {{situation}}</view>
+  <view>新手建议 : {{advice}}</view>
+</view>
+
