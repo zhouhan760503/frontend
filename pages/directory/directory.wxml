@@ -1,0 +1,12 @@
+<view id="main">
+  <!-- <view wx:for="{{leftList}}" wx:key="" class="leftpic">
+    <image src="{{item.url}}" mode="widthFix" class="pic"> </image>
+  </view>
+  <view wx:for="{{rightList}}" class = "rightpic">
+    <image src="{{item.url}}" mode="widthFix" class="pic"></image>
+  </view> -->
+  <view wx:for="{{list}}" class ="leftpic">
+    <image src="{{item.url}}" mode="widthFix" class="pic"></image>
+    <view>{{item.title}}</view>
+  </view>
+</view>

@@ -3,10 +3,10 @@
 <!-- todo -->
 
 <view class="container">
-  <!-- <view class="search">
+  <view class="search">
     <input placeholder="输入猫咪名称" type="text" confirm-type="search" bindconfirm="searchCat">
     </input>
-  </view> -->
+  </view>
 
   <!-- <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
@@ -18,17 +18,19 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view> -->
-
-  <block wx:for="{{catList}}">
+<view class="catlist">
+  <block wx:for="{{catList}}" class="cat-pic">
     <navigator url="/pages/cats/cats?id={{item.id}}" class="nav-cat">
 
       <view class='cat-view'>
-      <image class = 'cat-nav' src='{{item.img}}' mode='aspectFill'></image>
-       <view class='cat-name'> {{item.name}}</view>
+      <image class = 'cat-nav' src='{{item.img}}' mode='scaleToFill'></image>
       </view>
-    
+       <view class='cat-name'> {{item.name}}</view>
+
+
     </navigator>
     <view class="divLine"></view>
   </block>
+  </view>
 </view>
 

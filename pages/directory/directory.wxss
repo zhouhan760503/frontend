@@ -1,0 +1,21 @@
+/* pages/test/test.wxss */
+#main{
+  column-count: 2;
+  column-gap: 3rpx;
+  margin: 0 auto;
+}
+
+.leftpic{
+  margin: 10rpx;
+  break-inside: avoid;
+  padding: 8rpx;
+  border: 5rpx solid #ccc;
+  border-radius: 15rpx;
+  box-shadow: 0 0 5rpx #ccc;
+}
+
+.pic{
+  margin: 0 auto;
+  width: 44vw;
+  padding: 5rpx;
+}

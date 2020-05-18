@@ -17,7 +17,7 @@ Page({
         name: "11",
         img: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588485729767&di=90a2e57be22c82d6e02d192ea9243cbc&imgtype=0&src=http%3A%2F%2Ft2.58cdn.com.cn%2Fbidding%2Fbig%2Fn_v29911e4db9626414e9b40a905f9e57411.jpg"
       },
-      
+
     ],
     motto: 'Hello World',
     userInfo: {},
